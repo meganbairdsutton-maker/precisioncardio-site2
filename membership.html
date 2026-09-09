@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Who joins PrecisionCardio, what membership means, how priorities become work, and how PrecisionCardio is governed.">
+<title>Membership &middot; PrecisionCardio</title>
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#F4F1EA">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap">
+<style>
+:root{--ivory:#F4F1EA;--ivory2:#EAE6DB;--mineral:#DCE2F1;--ink:#16181C;--midnight:#16213F;--cobalt:#2A3D8F;--orange:#C1521E;
+  --mut:#4A4F57;--dim:#8A8E95;--rule:#D3CEC2;--hair:rgba(22,33,63,.2);
+  --fD:'Libre Franklin',system-ui,sans-serif;--fM:'IBM Plex Mono',ui-monospace,monospace;
+  --pgMax:1320px;--pgGut:clamp(22px,4vw,58px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--fD);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+h1,h2,h3,p,ul,li{margin:0;padding:0}
+ul{list-style:none}
+.wrap{width:100%;max-width:var(--pgMax);margin:0 auto;padding-left:var(--pgGut);padding-right:var(--pgGut)}
+
+/* masthead, unchanged from the site */
+.mast{display:flex;align-items:flex-start;justify-content:space-between;gap:28px;padding:22px 0 18px;border-bottom:1.5px solid var(--ink)}
+.lock b{display:block;font-weight:800;font-size:22px;letter-spacing:-.04em}
+.lock i{display:block;font-family:var(--fM);font-style:normal;font-weight:500;font-size:7.6px;letter-spacing:.15em;text-transform:uppercase;color:var(--cobalt);margin-top:6px;line-height:1.5}
+.lock a{text-decoration:none}
+.nav{display:flex;align-items:center;gap:26px;padding-top:5px}
+.nav a{font-family:var(--fM);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;text-decoration:none;color:var(--mut)}
+.nav a.on{color:var(--ink);border-bottom:1.5px solid var(--cobalt);padding-bottom:3px}
+.nav .btn{background:var(--cobalt);color:var(--ivory);font-weight:700;font-size:10px;padding:11px 16px}
+.nav .btn:hover{background:var(--midnight)}
+.gol{display:none}
+
+/* ---------- the reference sheet ---------- */
+/* No hero. One sentence, then a ledger: the field on the left, the answer on
+   the right, one ruled row per field. Built to be scanned, not read through. */
+.head{padding:clamp(40px,5.5vh,64px) 0 clamp(24px,3vh,32px)}
+.kicker{font-family:var(--fM);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--cobalt)}
+h1{margin-top:14px;font-weight:800;font-size:clamp(30px,3.4vw,46px);line-height:1.02;letter-spacing:-.04em;text-wrap:balance}
+h1 em{font-style:normal;color:var(--cobalt)}
+.head .lede{margin-top:16px;font-size:clamp(17px,1.45vw,21px);line-height:1.5;color:var(--mut);max-width:74ch;text-wrap:pretty}
+.head .acts{margin-top:22px}
+
+.ledger{padding-bottom:clamp(46px,6vh,72px)}
+.row{display:grid;grid-template-columns:minmax(0,250px) minmax(0,1fr);
+  column-gap:clamp(32px,4.5vw,72px);row-gap:10px;
+  padding:clamp(22px,3vh,32px) 0;border-top:1px solid var(--ink)}
+.row:last-of-type{border-bottom:1px solid var(--ink)}
+.field{position:sticky;top:24px;align-self:start}
+.field i{display:block;font-style:normal;font-family:var(--fM);font-size:10.5px;letter-spacing:.16em;color:var(--cobalt)}
+.field b{display:block;margin-top:7px;font-weight:700;font-size:clamp(17px,1.45vw,20px);letter-spacing:-.026em;line-height:1.2}
+.val{max-width:72ch}
+.val p{font-size:clamp(16px,1.2vw,17.5px);line-height:1.6;color:var(--mut)}
+.val p+p{margin-top:11px}
+.val p b{color:var(--ink);font-weight:600}
+.val .head2{font-weight:600;color:var(--ink);font-size:clamp(17px,1.3vw,19px);line-height:1.45;letter-spacing:-.014em}
+
+/* plain enumerations, the reference-sheet workhorse */
+.list{margin-top:14px}
+.list li{position:relative;padding:9px 0 9px 22px;font-size:clamp(15.5px,1.2vw,17px);line-height:1.45;
+  color:var(--ink);border-bottom:1px solid rgba(211,206,194,.75)}
+.list li:last-child{border-bottom:0}
+.list li::before{content:"";position:absolute;left:0;top:calc(.72em + 4px);width:11px;height:1px;background:var(--cobalt)}
+.steps{margin-top:14px}
+.steps li{display:grid;grid-template-columns:26px minmax(0,1fr);column-gap:14px;
+  padding:11px 0;border-bottom:1px solid rgba(211,206,194,.75)}
+.steps li:last-child{border-bottom:0}
+.steps li i{font-style:normal;font-family:var(--fM);font-size:11px;letter-spacing:.1em;color:var(--cobalt);padding-top:3px}
+.steps li b{display:block;font-weight:700;font-size:clamp(15.5px,1.2vw,17px);letter-spacing:-.018em}
+.steps li p{margin-top:5px;font-size:clamp(14.5px,1.1vw,16px);line-height:1.5;color:var(--mut)}
+.gov{margin-top:14px}
+.gov li{padding:11px 0;border-bottom:1px solid rgba(211,206,194,.75);display:grid;
+  grid-template-columns:minmax(0,190px) minmax(0,1fr);column-gap:20px;row-gap:4px}
+.gov li:last-child{border-bottom:0}
+.gov li b{font-weight:700;font-size:clamp(15.5px,1.2vw,17px);letter-spacing:-.018em}
+.gov li b.core{color:var(--cobalt)}
+.gov li p{font-size:clamp(14.5px,1.1vw,16px);line-height:1.5;color:var(--mut)}
+.note{margin-top:14px;font-size:15px;line-height:1.5;color:var(--dim)}
+
+/* the boundary, ruled rather than a colored screen */
+.bound{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:20px 0;margin-bottom:14px}
+.bound p{font-weight:800;font-size:clamp(18px,1.75vw,25px);line-height:1.15;letter-spacing:-.032em;color:var(--ink)}
+.bound .bar{height:3px;background:var(--orange);margin:13px 0;width:min(100%,320px)}
+
+.status{font-family:var(--fM);font-weight:500;font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink);margin-top:4px}
+.status i{font-style:normal;color:var(--cobalt);margin-right:14px}
+.status::before{content:"";display:inline-block;width:16px;height:2px;background:var(--orange);vertical-align:middle;margin-right:12px}
+.acts{display:flex;gap:14px 22px;align-items:center;flex-wrap:wrap;margin-top:18px}
+.cta{display:inline-block;background:var(--cobalt);color:var(--ivory);font-weight:600;font-size:11px;letter-spacing:.11em;text-transform:uppercase;padding:15px 24px;text-decoration:none;transition:background .2s}
+.cta:hover,.cta:focus-visible{background:var(--midnight);outline:none}
+
+/* footer */
+footer{background:var(--midnight);color:rgba(244,241,234,.62);padding:clamp(34px,4vh,48px) 0 clamp(30px,3.6vh,42px);font-weight:500;font-size:9px;letter-spacing:.1em;text-transform:uppercase;line-height:2}
+footer .flegal{max-width:96ch;font-size:12px;letter-spacing:0;line-height:1.65;text-transform:none;font-weight:400;color:rgba(244,241,234,.72)}
+footer .frow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:16px;margin-top:22px;border-top:1px solid rgba(244,241,234,.18)}
+footer .frow span:first-child{color:var(--ivory)}
+footer .frow a{color:rgba(244,241,234,.75);text-decoration:none;margin-left:14px}
+footer .frow a:hover{color:var(--ivory)}
+
+@media (max-width:860px){
+  .row{grid-template-columns:1fr;row-gap:14px;padding:22px 0}
+  .field{position:static}
+  .val{max-width:none}
+  .gov li{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .mast{align-items:center;gap:16px}
+  .lock i{display:none}.lock b{font-size:20px}
+  .nav a:not(.btn){display:none}
+  .nav .btn{background:transparent;color:var(--cobalt);box-shadow:inset 0 0 0 1.5px var(--cobalt);padding:9px 14px;font-size:11px}
+  .god{display:none}.gol{display:inline}
+  .head{padding:30px 0 20px}
+  h1{font-size:clamp(27px,7.4vw,34px)}
+  .head .lede{font-size:16.5px}
+  .val p{font-size:16px}
+  .status{letter-spacing:.11em;line-height:1.7}.status::before{background:var(--cobalt)}
+  .cta{width:100%;text-align:center;font-size:12px;padding:16px 20px}
+  footer .flegal{font-size:13px;line-height:1.55}
+  footer .frow{font-size:12px;letter-spacing:.08em;line-height:2.2}
+  footer .frow a{display:inline-block;margin:0 14px 0 0}
+}
+</style>
+</head>
+<body>
+<header class="wrap"><div class="mast"><div class="lock"><a href="/"><b>PrecisionCardio</b><i>Industry alliance for<br>precision cardiovascular medicine</i></a></div><nav class="nav"><a href="/about">About</a><a href="/membership" class="on">Membership</a><a href="/faq">FAQ</a><a class="btn" href="https://tally.so/r/jaRM7x" target="_blank" rel="noopener"><span class="god">Request a membership conversation</span><span class="gol">Membership</span></a></nav></div></header>
+
+<div class="wrap">
+  <div class="head">
+    <p class="kicker">Membership</p>
+    <h1>Built by the companies <em>shaping the field.</em></h1>
+    <p class="lede">PrecisionCardio is member-governed. Companies do more than fund PrecisionCardio: they surface what they are seeing, determine the shared priorities and contribute the expertise that moves the work forward.</p>
+    <div class="acts"><a class="cta" href="https://tally.so/r/jaRM7x" target="_blank" rel="noopener"><span class="god">Request a membership conversation</span><span class="gol">Request a conversation</span></a></div>
+  </div>
+
+  <div class="ledger">
+
+    <section class="row">
+      <div class="field"><i>01</i><b>Who joins</b></div>
+      <div class="val">
+        <p class="head2">Biotechnology and pharmaceutical companies.</p>
+        <p>Membership is designed for therapeutics companies working across precision cardiovascular medicine.</p>
+        <p>Professional societies, patient organizations, academic institutions, clinicians and other experts participate as strategic partners or collaborators when their expertise is relevant to a member-selected priority. They are not a second class of membership.</p>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="field"><i>02</i><b>What membership means</b></div>
+      <div class="val">
+        <p class="head2">Members support PrecisionCardio through annual dues and take part in its governance and program of work.</p>
+        <ul class="list">
+          <li>Surface recurring challenges they are seeing across the field.</li>
+          <li>Determine which issues warrant collective attention.</li>
+          <li>Contribute expertise through member-led working groups.</li>
+          <li>Help shape PrecisionCardio's direction and initial program of work.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="field"><i>03</i><b>How priorities become work</b></div>
+      <div class="val">
+        <p class="head2">Members set the agenda.</p>
+        <ol class="steps">
+          <li><i>1</i><div><b>Surface</b><p>Members bring forward recurring observations from across diseases, specialties and care settings.</p></div></li>
+          <li><i>2</i><div><b>Select</b><p>Members determine which issues become shared priorities through PrecisionCardio's governance process.</p></div></li>
+          <li><i>3</i><div><b>Convene</b><p>A member-led working group forms around the priority, bringing in the relevant external expertise and strategic partners as needed.</p></div></li>
+          <li><i>4</i><div><b>Advance</b><p>The group determines the appropriate collective action: professional-society collaboration, educational initiatives, practical resources, academic partnerships, shared gap analysis or other pre-competitive work.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="field"><i>04</i><b>The partner follows the project</b></div>
+      <div class="val">
+        <p class="head2">PrecisionCardio does not begin with a fixed roster of outside organizations.</p>
+        <p>Members determine the question first, then bring in the professional society, patient organization, academic group, clinical experts or other partners that particular work needs.</p>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="field"><i>05</i><b>Governance</b></div>
+      <div class="val">
+        <p class="head2">Member-led by design.</p>
+        <p>PrecisionCardio is governed by its members and Board of Directors. The Board provides fiduciary and organizational oversight, while members help set priorities and participate in the work through PrecisionCardio's governance structure and working groups.</p>
+        <ul class="gov">
+          <li><b>Members</b><p>Surface what they are seeing. Determine the shared priorities.</p></li>
+          <li><b class="core">Board of Directors</b><p>Fiduciary and organizational oversight. Forming with the founding membership.</p></li>
+          <li><b>Member-led working groups</b><p>One per priority, with the partners the work needs.</p></li>
+        </ul>
+        <p class="note">Detailed voting, committee and governance provisions are contained in the Alliance's governing documents and membership materials.</p>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="field"><i>06</i><b>Pre-competitive boundaries</b></div>
+      <div class="val">
+        <div class="bound">
+          <p>At the disease level, the challenge is shared.</p>
+          <div class="bar"></div>
+          <p>Product-specific decisions are not.</p>
+        </div>
+        <p>PrecisionCardio does not coordinate product-specific clinical development, regulatory or commercial strategy, product positioning, pricing, contracting, market allocation or other competitively sensitive activity. <b>Alliance activities will operate under appropriate antitrust and compliance procedures.</b></p>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="field"><i>07</i><b>Founding membership</b></div>
+      <div class="val">
+        <p class="head2">Founding membership is now forming.</p>
+        <p>Founding members will help shape PrecisionCardio's initial priorities, governance and first program of work.</p>
+        <p class="status"><i>Founding membership</i>Now forming &middot; Open through December 2026</p>
+        <div class="acts"><a class="cta" href="https://tally.so/r/jaRM7x" target="_blank" rel="noopener"><span class="god">Request a membership conversation</span><span class="gol">Request a conversation</span></a></div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<footer><div class="wrap"><p class="flegal">PrecisionCardio Industry Alliance, Inc. is a nonprofit industry association incorporated in Delaware, seeking recognition as a tax-exempt business league under Section 501(c)(6).</p><div class="frow"><span>PrecisionCardio Industry Alliance, Inc.</span><span><a href="/">Home</a><a href="/about">About</a><a href="/membership">Membership</a><a href="/faq">FAQ</a></span></div></div></footer>
+</body>
+</html>
